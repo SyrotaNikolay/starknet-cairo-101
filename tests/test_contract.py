@@ -41,7 +41,7 @@ EX7 = os.path.join("contracts", "ex07.cairo")
 EX8 = os.path.join("contracts", "ex08.cairo")
 EX9 = os.path.join("contracts", "ex09.cairo")
 EX10 = os.path.join("contracts", "ex10.cairo")
-EX10b = os.path.join("contracts", "ex10b.cairo")
+EX15 = os.path.join("contracts", "ex15.cairo")
 EX11 = os.path.join("contracts", "ex11.cairo")
 EX12 = os.path.join("contracts", "ex12.cairo")
 EX13 = os.path.join("contracts", "ex13.cairo")
@@ -129,8 +129,8 @@ class CairoContractTest(TestCase):
         ex14 = await starknet.deploy(
             source=EX14, constructor_calldata=[*INIT_CALLDATA, 14]
         )
-        ex10b = await starknet.deploy(
-            source=EX10b, constructor_calldata=[ex10.contract_address]
+        ex15 = await starknet.deploy(
+            source=EX15, constructor_calldata=[ex10.contract_address]
         )
 
         await players.set_exercises_or_admins(
