@@ -17,7 +17,7 @@ mod Ex04 {
     ////////////////////////////////
     // Core Library imports
     // These are syscalls and functionalities that allow you to write Starknet contracts
-    ////////////////////////////////
+    /////////////////////////////////
     use starknet::get_caller_address;
     use starknet::ContractAddress;
     use array::ArrayTrait;
