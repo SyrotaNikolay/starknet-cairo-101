@@ -12,7 +12,7 @@
 // - How to read storage variables
 // - How to create getter functions (indicated with #[view]) to read variables
 // - How to use asserts; they are similar to require() in Solidity
-////////////////////////////////
+/////////////////////////////////
 
 
 #[contract]
